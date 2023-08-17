@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your volt</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-10">
+        <h3 class="text-4xl font-bold  text-center">lets get's some <span class="font-extrabold text-cyan-700">
+                money</span></h3>
+    </header>
+
+    <main>
+        <section class="mt-20">
+            <div class="grid grid-cols-3 w-3/4 mx-auto">
+                <div class=" bg-[#079992] rounded w-3/4 p-8 text-center">
+                    <h2 class="text-3xl capitalize font-semibold mb-4 text-white">deposit</h2>
+                    <hr>
+                    <p class="text-3xl font-medium text-white"> <span id="deposit-amount">00</span> Bdt</p>
+                </div>
+
+                <div class=" bg-[#079992] rounded w-3/4 p-8 text-center">
+                    <h2 class="text-3xl capitalize font-semibold mb-4 text-white">withdraw</h2>
+                    <hr>
+                    <p class="text-3xl font-medium text-white"><span id="withdraw-amount"> 00</span> Bdt</p>
+                </div>
+
+                <div class=" bg-[#079992] rounded w-3/4 p-8 text-center">
+                    <h2 class="text-3xl capitalize font-semibold mb-4 text-white">balance</h2>
+                    <hr>
+                    <p class="text-3xl font-medium text-white"><span id="balance-amount">1000</span> Bdt</p>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section>
+            <div class="grid grid-cols-2 w-3/4 mx-auto mt-20 bg-cyan-950 p-10 rounded">
+                <div>
+                    <input class="px-10 py-2 rounded" type="text" name="" id="btn-deposit" placeholder="please enter your amount">
+                    <p id="deposit-btn" class="capitalize text-3xl font-medium text-white mb-5">deposit</p>
+                </div>
+                <div>
+                    <input class="px-10 py-2 rounded" type="text" name="" id="btn-withdraw" placeholder="please enter your amount">
+                    <p id="withdraw-btn" class="capitalize text-3xl font-medium text-white mb-5">withdraw</p>
+                </div>
+
+                 
+            </div>
+
+        </section>
+    </main>
+    <script src="./js/bank.js"></script>
+</body>
+
+</html>
